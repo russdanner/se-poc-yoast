@@ -3,10 +3,10 @@
 <div <@studio.componentAttr path=contentModel.storeUrl ice=true /> >
 	<#assign formId = contentModel.objectId?replace('-','') />
 	<form>
-    	<#list contentModel.fields.item as field>
+    	<#list contentModel.fields_o.item as field>
   
   <h1 style="color:fffff">
-        	<label>${field.label} <#if field.required='true'><span class='required'>*</span></#if>
+        	<label>${field.label} <#if field.required_b='true'><span class='required'>*</span></#if>
                 <#if field.type=="Input">
                   <input type='text' id='${formId}-${field.id}' value='${field.defaultValue!""}' /> 
             	<#elseif field.type=="Text Area">
