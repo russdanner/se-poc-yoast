@@ -12,6 +12,18 @@ var ReactComponent = function (_a) {
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
         //    dataLoadIndex();
+        var script = document.createElement('script');
+        script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
+        document.body.appendChild(script);
+        alert("add a");
+        script = document.createElement('script');
+        script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=filename=1.chunk.js';
+        document.body.appendChild(script);
+        alert("add b");
+        script = document.createElement('script');
+        script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
+        document.body.appendChild(script);
+        alert("add c");
     }, []);
     var _b = useState(false), open = _b[0], setOpen = _b[1];
     // const [state, setState] = React.useState({ items: {}, hasMore: true, curPage: 0, itemsPerPage: 10, itemSize: 1 });
@@ -27,10 +39,7 @@ var ReactComponent = function (_a) {
             createElement("span", { className: "MuiTouchRipple-root" })),
         createElement(Dialog, { fullWidth: true, maxWidth: "xl", onClose: function () { return setOpen(false); }, "aria-labelledby": "simple-dialog-title", open: open },
             createElement(DialogTitle, { id: "max-width-dialog-title" }, "YOST SEO Analysis"),
-            createElement("div", { id: "root" }),
-            createElement("script", { src: "/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js" }),
-            createElement("script", { src: "/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=1.chunk.js" }),
-            createElement("script", { src: "/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js" }))));
+            createElement("div", { id: "root" }))));
 };
 
 var NonReactComponent = {
