@@ -11,19 +11,16 @@ var ReactComponent = function (_a) {
     // }
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
-        //    dataLoadIndex();
         var script = document.createElement('script');
         script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
         document.body.appendChild(script);
-        alert("add a");
         script = document.createElement('script');
         script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=filename=1.chunk.js';
         document.body.appendChild(script);
-        alert("add b");
         script = document.createElement('script');
         script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
         document.body.appendChild(script);
-        alert("add c");
+        alert("added script tags");
     }, []);
     var _b = useState(false), open = _b[0], setOpen = _b[1];
     // const [state, setState] = React.useState({ items: {}, hasMore: true, curPage: 0, itemsPerPage: 10, itemSize: 1 });
