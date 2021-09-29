@@ -13,9 +13,7 @@
   ~
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
-  -->
-
-<page>
+  --><page>
   <content-type>/page/home</content-type>
   <display-template>/templates/web/pages/home.ftl</display-template>
   <no-template-required/>
@@ -29,7 +27,7 @@
   <createdDate>2017-1-31T16:18:14.000Z</createdDate>
   <createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
   <lastModifiedDate>2021-03-31T18:08:03.196Z</lastModifiedDate>
-  <lastModifiedDate_dt>2021-03-31T18:20:09.599Z</lastModifiedDate_dt>
+  <lastModifiedDate_dt>2021-09-29T16:36:07.149Z</lastModifiedDate_dt>
   <title_t>Editorial</title_t>
   <hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
   <hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
@@ -40,6 +38,24 @@
       <value>Smile</value>
       <include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
       <disableFlattening>false</disableFlattening>
+    </item>
+    <item datasource="TODO" inline="true">
+      <key>89211ab0-8d26-48d4-a021-98509a11bbc6</key>
+      <value>New User Form</value>
+      <component id="89211ab0-8d26-48d4-a021-98509a11bbc6">
+        <content-type>/component/userform</content-type>
+        <display-template>/templates/web/user-form.ftl</display-template>
+        <internal-name>New User Form</internal-name>
+        <file-name>89211ab0-8d26-48d4-a021-98509a11bbc6.xml</file-name>
+        <merge-strategy>inherit-levels</merge-strategy>
+        <createdDate_dt>2021-09-29T16:36:07.142Z</createdDate_dt>
+        <lastModifiedDate_dt>2021-09-29T16:36:07.142Z</lastModifiedDate_dt>
+        <objectId>89211ab0-8d26-48d4-a021-98509a11bbc6</objectId>
+        <locale>en</locale>
+        <localeCode>en</localeCode>
+        <headline_s/>
+        <controls_o/>
+      </component>
     </item>
     <item datasource="features" inline="true">
       <key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
