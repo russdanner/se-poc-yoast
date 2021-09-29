@@ -10,7 +10,9 @@ var ReactComponent = function (_a) {
     // }
     var doMyStuff = function () {
         // @ts-ignore
-        alert(window.location.hash);
+        var hash = location.hash;
+        var pageUrl = hash.substring(hash.indexOf("page=") + 5, hash.indexOf("&"));
+        alert(pageUrl);
         //window.location=window.location+"?SEO=on"
     };
     //let [imageIndex, setImageIndex] = React.useState(null);
