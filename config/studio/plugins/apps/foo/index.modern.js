@@ -10,18 +10,8 @@ var ReactComponent = function (_a) {
     //     })
     // }
     var doMyStuff = function () {
-        setOpen(true);
-        window.setTimeout(function () {
-            var script = document.createElement('script');
-            script.src = '/static-assets/app/yoastseojs/js/bundle.js';
-            document.body.appendChild(script);
-            script = document.createElement('script');
-            script.src = '/static-assets/app/yoastseojs/js/1.chunk.js';
-            document.body.appendChild(script);
-            script = document.createElement('script');
-            script.src = '/static-assets/app/yoastseojs/js/main.chunk.js';
-            document.body.appendChild(script);
-        }, 2000);
+        // @ts-ignore
+        window.location = window.location + "?SEO=on";
     };
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
