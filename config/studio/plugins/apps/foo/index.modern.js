@@ -16,7 +16,7 @@ var ReactComponent = function (_a) {
             script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
             document.body.appendChild(script);
             script = document.createElement('script');
-            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=filename=1.chunk.js';
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=filename=one.chunk.js';
             document.body.appendChild(script);
             script = document.createElement('script');
             script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
