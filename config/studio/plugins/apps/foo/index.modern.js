@@ -12,7 +12,6 @@ var ReactComponent = function (_a) {
     var doMyStuff = function () {
         setOpen(true);
         window.setTimeout(function () {
-            document.body.appendChild(script);
             script = document.createElement('script');
             script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=1.chunk.js.map';
             document.body.appendChild(script);
