@@ -25,6 +25,9 @@
                         <widget id="craftercms.components.Dashboard"/>
                     </configuration>
                 </widget>
+                <widget id="org.craftercms.sampleComponentLibraryPlugin.components.reactComponent">
+                    <plugin site="{site}" type="apps" name="foo" file="index.modern.js" />
+                </widget>
                 <widget id="craftercms.components.ToolsPanelPageButton">
                     <configuration>
                         <title id="previewSiteExplorerPanel.title" defaultMessage="Site Explorer"/>
