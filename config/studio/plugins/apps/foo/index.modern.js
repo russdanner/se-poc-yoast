@@ -11,15 +11,17 @@ var ReactComponent = function (_a) {
     // }
     var doMyStuff = function () {
         setOpen(true);
-        var script = document.createElement('script');
-        script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
-        document.body.appendChild(script);
-        script = document.createElement('script');
-        script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=filename=1.chunk.js';
-        document.body.appendChild(script);
-        script = document.createElement('script');
-        script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
-        document.body.appendChild(script);
+        window.setTimeout(function () {
+            var script = document.createElement('script');
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
+            document.body.appendChild(script);
+            script = document.createElement('script');
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=filename=1.chunk.js';
+            document.body.appendChild(script);
+            script = document.createElement('script');
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
+            document.body.appendChild(script);
+        }, 2000);
     };
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
