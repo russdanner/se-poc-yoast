@@ -12,8 +12,8 @@
 	<folder-name/>
 	<createdDate>2017-1-31T16:18:14.000Z</createdDate>
 	<createdDate_dt>2017-1-31T16:18:14.000Z</createdDate_dt>
-	<lastModifiedDate>2021-09-29T17:14:11.802Z</lastModifiedDate>
-	<lastModifiedDate_dt>2021-09-29T17:14:11.802Z</lastModifiedDate_dt>
+	<lastModifiedDate>2021-09-29T18:21:01.430Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-09-29T18:21:01.430Z</lastModifiedDate_dt>
 	<title_t>Editorial</title_t>
 	<hero_text_html>&lt;p&gt;Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.&lt;/p&gt;</hero_text_html>
 	<hero_title_html>&lt;h1&gt;Hi, I&amp;rsquo;m Editorial&lt;/h1&gt;
@@ -22,33 +22,6 @@
 	<value>Smile</value>
 	<include>/site/components/features/4be0a368-783c-8f73-7469-63a62636bd4c.xml</include>
 	<disableFlattening>false</disableFlattening>
-	</item>	<item datasource="TODO" inline="true">	<key>89211ab0-8d26-48d4-a021-98509a11bbc6</key>
-	<value>New User Form</value>
-	<disableFlattening>false</disableFlattening>
-<component id="89211ab0-8d26-48d4-a021-98509a11bbc6">
-	<content-type>/component/userform</content-type>
-	<display-template>/templates/web/user-form.ftl</display-template>
-	<no-template-required/>
-	<merge-strategy>inherit-levels</merge-strategy>
-	<internal-name>New User Form</internal-name>
-	<file-name>89211ab0-8d26-48d4-a021-98509a11bbc6.xml</file-name>
-	<createdDate_dt>2021-09-29T16:58:58.599Z</createdDate_dt>
-	<lastModifiedDate_dt>2021-09-29T17:14:21.318Z</lastModifiedDate_dt>
-	<objectId>89211ab0-8d26-48d4-a021-98509a11bbc6</objectId>
-	<locale>en</locale>
-	<localeCode>en</localeCode>
-	<headline_s>My Form</headline_s>
-	<controls_o item-list="true">	<item>	<required_b>true</required_b>
-	<type_s>Input</type_s>
-	<label_s>foo</label_s>
-	<defaultValue_s>foo</defaultValue_s>
-	</item></controls_o>
-	<folder-name/>
-	<createdDate>2021-09-29T16:58:58.599Z</createdDate>
-	<lastModifiedDate>2021-09-29T17:14:21.318Z</lastModifiedDate>
-	<submitLabel_s>Submit</submitLabel_s>
-	<actionDetail_s>/api/print-to-log.json</actionDetail_s>
-</component>
 	</item>	<item datasource="features" inline="true">	<key>310b0c87-c3ca-4da0-4aa2-7002a318d7ce</key>
 	<value>Download</value>
 	<disableFlattening>false</disableFlattening>
