@@ -13,13 +13,13 @@ var ReactComponent = function (_a) {
         setOpen(true);
         window.setTimeout(function () {
             var script = document.createElement('script');
-            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
+            script.src = '/static-assets/app/yoastseojs/js/bundle.js';
             document.body.appendChild(script);
             script = document.createElement('script');
-            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=1.chunk.js';
+            script.src = '/static-assets/app/yoastseojs/js/1.chunk.js';
             document.body.appendChild(script);
             script = document.createElement('script');
-            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
+            script.src = 'vmain.chunk.js';
             document.body.appendChild(script);
         }, 2000);
     };
