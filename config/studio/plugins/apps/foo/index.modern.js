@@ -11,10 +11,6 @@ var ReactComponent = function (_a) {
     // }
     var doMyStuff = function () {
         setOpen(true);
-        alert("meow");
-    };
-    //let [imageIndex, setImageIndex] = React.useState(null);
-    useEffect(function () {
         var script = document.createElement('script');
         script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
         document.body.appendChild(script);
@@ -25,6 +21,9 @@ var ReactComponent = function (_a) {
         script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
         document.body.appendChild(script);
         alert("added script tags");
+    };
+    //let [imageIndex, setImageIndex] = React.useState(null);
+    useEffect(function () {
     }, []);
     var _b = useState(false), open = _b[0], setOpen = _b[1];
     // const [state, setState] = React.useState({ items: {}, hasMore: true, curPage: 0, itemsPerPage: 10, itemSize: 1 });
