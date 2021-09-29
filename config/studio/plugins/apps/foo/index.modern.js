@@ -19,7 +19,7 @@ var ReactComponent = function (_a) {
             script.src = '/static-assets/app/yoastseojs/js/1.chunk.js';
             document.body.appendChild(script);
             script = document.createElement('script');
-            script.src = 'vmain.chunk.js';
+            script.src = '/static-assets/app/yoastseojs/js/main.chunk.js';
             document.body.appendChild(script);
         }, 2000);
     };
