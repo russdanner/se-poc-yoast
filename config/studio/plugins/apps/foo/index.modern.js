@@ -27,7 +27,7 @@ var ReactComponent = function (_a) {
             createElement("span", { className: "MuiTouchRipple-root" })),
         createElement(Dialog, { fullWidth: true, maxWidth: "xl", onClose: function () { return setOpen(false); }, "aria-labelledby": "simple-dialog-title", open: open },
             createElement(DialogTitle, { id: "max-width-dialog-title" }, "YOST SEO Analysis"),
-            "foo")));
+            createElement("div", { id: "root" }))));
 };
 
 var NonReactComponent = {
