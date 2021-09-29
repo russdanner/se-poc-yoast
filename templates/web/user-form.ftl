@@ -1,27 +1,30 @@
-<#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#import "/templates/system/common/crafter.ftl" as crafter />
 
-<div <@studio.componentAttr path=contentModel.storeUrl ice=true /> >
+<@crafter.componentRootTag $tag="div" class="">
 	<#assign formId = contentModel.objectId?replace('-','') />
 	<form>
-    	<#list contentModel.fields_o.item as field>
+      <h3>${contentModel.headline_s}</h3>
+      <#list contentModel.controls_o.item as field>
   
-  <h1 style="color:fffff">
-        	<label>${field.label} <#if field.required_b='true'><span class='required'>*</span></#if>
-                <#if field.type=="Input">
-                  <input type='text' id='${formId}-${field.id}' value='${field.defaultValue!""}' /> 
-            	<#elseif field.type=="Text Area">
-                  <textarea type='text' id='${formId}-${field.id}'>${field.defaultValue!""}'</textarea>
+
+        	<label>${field.label_s} 
+          <#if field.required_b=true><span class='required'>*</span></#if>
+
+
+                <#if field.type_s=="Input">
+                  <input type='text' id='${formId}-${field.label_s}' value='${field.defaultValue_s!""}' /> 
+            	<#elseif field.type_s=="Text Area">
+                  <textarea type='text' id='${formId}-${field.label_s}'>${field.defaultValue_s!""}'</textarea>
             	<#elseif field.type=="Boolean">
-                 <input type='checkbox' id='${formId}-${field.id}' <#if field.defaultValue?? && field.defaultValue=="true">checked='true'</#if> />
+                 <input type='checkbox' id='${formId}-${field.label_s}' <#if field.defaultValue_s?? && field.defaultValue_s=="true">checked='true'</#if> />
             	</#if>
             </label>
-   </h1>
+
         </#list>
          <button type="${formId}sumbit" onclick='return ${formId}submit();'>${submitButtonLabel!"Submit"}</button>
-
       </form>
 
-	<div class="modal fade ${formId}Dialog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	<div class="modal fade ${formId}Dialog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display:none">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           ${contentModel.result!"Submitted"}
@@ -34,8 +37,8 @@
             	var values = [];
                 values[0] = "${contentModel.storeUrl}";
 
-                <#list contentModel.fields.item as field>
-        			values[${field_index}+1] = { label: "${field.label}", value: document.getElementById("${formId}-${field.id}") };
+                <#list contentModel.controls_o.item as field>
+        			values[${field_index}+1] = { label: "${field.label_s}", value: document.getElementById("${formId}-${field.label_s}") };
 				</#list>
 
                   $.ajax({
@@ -61,4 +64,4 @@
                 return false;
             }
     </script>
-</div>
+</@crafter.componentRootTag> 
