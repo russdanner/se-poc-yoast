@@ -1,5 +1,4 @@
-var { useEffect, useState, createElement, Fragment } = craftercms.libs.React;
-var { Dialog, DialogTitle } = craftercms.libs.MaterialUI;
+var { useEffect, createElement, Fragment } = craftercms.libs.React;
 var jss = craftercms.libs.jss && Object.prototype.hasOwnProperty.call(craftercms.libs.jss, 'default') ? craftercms.libs.jss['default'] : craftercms.libs.jss;
 
 var ReactComponent = function (_a) {
@@ -11,12 +10,13 @@ var ReactComponent = function (_a) {
     // }
     var doMyStuff = function () {
         // @ts-ignore
-        window.location = window.location + "?SEO=on";
+        alert(window.location.hash);
+        //window.location=window.location+"?SEO=on"
     };
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
     }, []);
-    var _b = useState(false), open = _b[0], setOpen = _b[1];
+    //  const [open, setOpen] = React.useState(false);
     // const [state, setState] = React.useState({ items: {}, hasMore: true, curPage: 0, itemsPerPage: 10, itemSize: 1 });
     return (createElement(Fragment, null,
         createElement("div", { className: "MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" },
@@ -27,10 +27,7 @@ var ReactComponent = function (_a) {
                 createElement("span", { className: "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock", onClick: function () { return doMyStuff(); } }, "YOST SEO Analysis")),
             createElement("svg", { className: "MuiSvgIcon-root", focusable: "false", viewBox: "0 0 24 24", "aria-hidden": "true" },
                 createElement("path", { d: "M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" })),
-            createElement("span", { className: "MuiTouchRipple-root" })),
-        createElement(Dialog, { fullWidth: true, maxWidth: "xl", onClose: function () { return setOpen(false); }, "aria-labelledby": "simple-dialog-title", open: open },
-            createElement(DialogTitle, { id: "max-width-dialog-title" }, "YOST SEO Analysis"),
-            createElement("div", { id: "root" }))));
+            createElement("span", { className: "MuiTouchRipple-root" }))));
 };
 
 var NonReactComponent = {
