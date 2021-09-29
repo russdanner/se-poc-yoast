@@ -20,7 +20,6 @@ var ReactComponent = function (_a) {
         script = document.createElement('script');
         script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
         document.body.appendChild(script);
-        alert("added script tags");
     };
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
