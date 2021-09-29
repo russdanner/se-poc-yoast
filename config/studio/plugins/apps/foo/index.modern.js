@@ -12,11 +12,17 @@ var ReactComponent = function (_a) {
     var doMyStuff = function () {
         setOpen(true);
         window.setTimeout(function () {
+            script = document.createElement('script');
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=2d3a64543b9e5cbed9e6.worker.js';
+            document.body.appendChild(script);
+            script = document.createElement('script');
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=1.chunk.js.map';
+            document.body.appendChild(script);
             var script = document.createElement('script');
             script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=bundle.js';
             document.body.appendChild(script);
             script = document.createElement('script');
-            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=one.chunk.js';
+            script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=1.chunk.js';
             document.body.appendChild(script);
             script = document.createElement('script');
             script.src = '/studio/1/plugin/file?siteId=editorial&type=apps&name=foo&filename=main.chunk.js';
