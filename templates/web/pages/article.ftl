@@ -13,6 +13,7 @@
 </head>
 <body>
 <@crafter.body_top/>
+<#include "/templates/web/yoastseo_support.ftl">
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -42,6 +43,7 @@
           <@crafter.img $field='image_s' src="${image}" alt=""/>
         </span>
 
+        <div id="bodyContent">
         <@crafter.renderRepeatCollection
           $field="sections_o"
           $containerAttributes={'style': 'list-style: none; padding-left: 0;'};
@@ -55,6 +57,7 @@
           </@crafter.div>
           <hr class="major" />
         </@crafter.renderRepeatCollection>
+        <div>
 			</section>
 		</div>
 	</div>

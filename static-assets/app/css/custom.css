@@ -1,0 +1,244 @@
+/* Hero Banner Styles */
+.banner.banner--hero {
+  background-size: cover;
+  background-position: 50% 0%;
+/*  box-shadow: inset 0 17px 12px -12px rgba(0, 0, 0, 0.5); */
+  padding: calc(-1rem + 20vmin) 0 calc(1.2rem + 10vmin);
+  overflow: auto;
+  position: relative;
+}
+.banner.banner--hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: 100%;  
+  
+  background-color: #000;
+  opacity: .6;
+
+/*-webkit-filter: blur(1px) brightness(25%);
+  -moz-filter: blur(1px) brightness(25%);
+  -o-filter: blur(1px) brightness(25%);
+  -ms-filter: blur(1px) brightness(25%);
+  filter: blur(1px) brightness(25%);
+*/
+}
+
+.page-home .banner.banner--hero {
+  background-position: 50% 50%;
+}
+.page-home .banner.banner--hero:before {
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+}
+
+
+.banner.banner--hero .container {
+  z-index: 2;
+  position: relative;
+}
+
+
+.banner.banner--hero .title, .banner.banner--hero .description {
+    text-shadow: 0 4px 2.5px rgba(0, 0, 0, 0.625);
+}
+
+.banner.banner--hero .title {
+  line-height: 1;
+  margin-bottom: 1em;
+  font-size: 13vw;
+  position: relative;
+}
+.banner.banner--hero .title:before {
+  content: '';
+  background: #fff;
+  width: 160px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner.banner--hero .title.red {
+  color: #e00828;
+}
+.banner.banner--hero .subtitle {
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+}
+.banner-caption {
+  background: #000;
+  color: #fff;
+  padding: 12px 0;
+}
+.banner.banner--hero .description {
+  margin: 0 auto calc(0.5em + 3vh);
+  max-width: 30em;
+}
+
+
+@media (min-width: 28em) {
+  .banner.banner--hero .title {
+    font-size: 4.375rem;
+  }
+}
+
+@media (min-width: 52em) {
+  .banner.banner--hero .description {
+    max-width: 38em;
+    font-size: 18pt;
+    line-height: 26pt;
+  }
+}
+
+
+/* END: Hero Banner Styles */
+
+
+
+@media (max-width: 28em) {
+  .mobilebreak {
+    display:none !important;
+}
+}
+
+
+
+
+
+/* Page-specific custom banner styling */
+.banner--doingbetter {
+  background-color: #333!important;
+  background-size: cover!important;
+  background-position: center!important;
+  padding: calc(2em + 4vh) 0;
+}
+
+/* Page-specific banner title styling for a larger font-size + vertical space override for .description + title  w/in .banner */
+.banner--doingbetter .title {
+  margin-bottom: 15px;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+
+/* Page-specific custom banner styling */
+.banner--diversitystatement {
+    padding: calc(2em + 9vh) 0;
+    background-color: #333!important;
+    background-size: cover!important;
+    background-position: center!important;
+}
+.banner--diversitystatement a{
+  color: #fff;
+}
+.banner--diversitystatement .title{
+  margin-bottom: 15px;
+}
+
+.ingredient-accordion p {
+  margin-bottom: 1.75em;
+}
+
+.editorial .img-container.img-right,
+.editorial .img-container.img-left {
+  float: none;
+  margin: 0 0 1.175em;
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  clear:both;
+}
+.editorial {
+    overflow: hidden !important;
+}    
+.editorial figure img {
+  margin-bottom: .75em;
+  width: 100%;
+}
+.editorial .img-container figcaption {
+  font-size: 0.75em;
+  line-height: 1.6;
+  color: rgba(0,0,0,.6);
+  text-align: center;
+}
+
+.editorial.full-width {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Article Styles */
+.article-nav {
+  list-style: none; 
+  padding: 30px 0;
+}
+.article-nav a {
+  text-decoration: none;
+}
+.article-nav .align-left {
+  float: left;
+}
+.article-nav .align-right {
+  float: right;
+}
+.tags span {
+  font-weight: bold;
+}
+
+.grey-box {
+    border-left: 6px solid #f3f3f3;
+    padding: 0 0.75em;
+    margin-bottom: 2em;
+    margin-top: 4.5em;
+}
+
+
+
+
+
+@media (min-width: 60em) {
+  .banner--doingbetter .title {
+    font-size: 62px;
+    line-height: 62px;
+  }
+  .padded-sides .editorial {
+    padding: 0 11vw;
+  }
+  .editorial .img-container.img-right,
+  .editorial .img-container.img-left {
+    float: right;
+    margin: 10px -100px 40px 40px;
+    max-width: 450px;
+    min-width: 270px;
+    left: unset;
+    transform: unset;
+    clear: right;
+  }
+  .editorial .img-container.img-left {
+    float: left;
+    margin: 10px 40px 40px -100px;
+    clear: left;
+  }
+  .padded-sides .article-nav {
+    padding: 30px 11vw;
+  }
+  .editorial .img-container.img-center {
+    float: none;
+    margin: 10px auto;
+    max-width: 520px;
+    min-width: 270px;
+    left: unset;
+    transform: unset;
+  }
+  
+}

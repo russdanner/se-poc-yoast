@@ -1,0 +1,10 @@
+.dg {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  bottom: 0;
+  height: 10em; }
+  .dg select {
+    width: 100%; }
+  .dg ul.closed + .close-button {
+    bottom: 1em; }

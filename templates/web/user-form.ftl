@@ -4,6 +4,7 @@
 	<#assign formId = contentModel.objectId?replace('-','') />
 	<form>
       <h3>${contentModel.headline_s}</h3>
+      <#if contentModel.controls_o?? && contentModel.controls_o.item??>
       <#list contentModel.controls_o.item as field>
   
 
@@ -21,6 +22,7 @@
             </label>
 
         </#list>
+        </#if>
          <button type="${formId}sumbit" onclick='return ${formId}submit();'>${submitButtonLabel!"Submit"}</button>
       </form>
 
@@ -37,9 +39,12 @@
             	var values = [];
                 values[0] = "${contentModel.storeUrl}";
 
+                <#if contentModel.controls_o?? && contentModel.controls_o.item??>
+
                 <#list contentModel.controls_o.item as field>
         			values[${field_index}+1] = { label: "${field.label_s}", value: document.getElementById("${formId}-${field.label_s}") };
-				</#list>
+				      </#list>
+              </#if>
 
                   $.ajax({
                   	type: "POST",
