@@ -22,3 +22,5 @@ def searchHelper = new SearchHelper(elasticsearch, urlTransformationService)
 def articles = searchHelper.searchArticles(true, null, segment)
 
 templateModel.articles = articles
+
+templateModel.user = (params.name) ? params.name : "Jay"
