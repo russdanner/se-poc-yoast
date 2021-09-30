@@ -29,6 +29,7 @@
       <section id="banner">
         <div class="content">
           <@crafter.header $field="hero_title_html" $label="Hero Title">
+           <input value="${user}"/>
             ${contentModel.hero_title_html}
           </@crafter.header>
           <@crafter.div $field="hero_text_html">
