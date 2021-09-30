@@ -391,12 +391,12 @@
 					<iceId></iceId>
 					<title>Action</title>
 					<description></description>
-					<defaultValue></defaultValue>
+					<defaultValue> </defaultValue>
 					<help></help>
 					<properties>
 						<property>
 							<name>datasource</name>
-							<value></value>
+							<value>actions</value>
 							<type>datasource:item</type>
 						</property>
 						<property>
