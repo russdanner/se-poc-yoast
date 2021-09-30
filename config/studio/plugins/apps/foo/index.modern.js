@@ -12,8 +12,10 @@ var ReactComponent = function (_a) {
         // @ts-ignore
         var hash = location.hash;
         var pageUrl = hash.substring(hash.indexOf("page=") + 5, hash.indexOf("&"));
-        alert(pageUrl);
-        //window.location=window.location+"?SEO=on"
+        var pageUrlSeo = pageUrl + "?SEO=on";
+        var newLocation = ("" + window.location).replace(pageUrl, pageUrlSeo);
+        // @ts-ignore
+        window.location = newLocation;
     };
     //let [imageIndex, setImageIndex] = React.useState(null);
     useEffect(function () {
