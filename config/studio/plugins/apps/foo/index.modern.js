@@ -28,7 +28,7 @@ var ReactComponent = function (_a) {
                 createElement("svg", { className: "MuiSvgIcon-root", focusable: "false", viewBox: "0 0 24 24", "aria-hidden": "true" },
                     createElement("path", { d: "M4 13h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1zm0 8h6c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1zm10 0h6c.55 0 1-.45 1-1v-8c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1zM13 4v4c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1h-6c-.55 0-1 .45-1 1z" }))),
             createElement("div", { className: "MuiListItemText-root" },
-                createElement("span", { className: "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock", onClick: function () { return doMyStuff(); } }, "YOST SEO Analysis")),
+                createElement("span", { className: "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-noWrap MuiTypography-displayBlock", onClick: function () { return doMyStuff(); } }, "SEO Analysis")),
             createElement("svg", { className: "MuiSvgIcon-root", focusable: "false", viewBox: "0 0 24 24", "aria-hidden": "true" },
                 createElement("path", { d: "M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z" })),
             createElement("span", { className: "MuiTouchRipple-root" }))));
