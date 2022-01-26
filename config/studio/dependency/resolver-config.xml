@@ -21,7 +21,7 @@
 
 -->
 <dependency-resolver> 
-  <version>3</version>  
+  <version>4.0.1</version>  
   <item-types> 
     <item-type> 
       <name>page</name>  
