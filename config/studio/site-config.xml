@@ -21,7 +21,7 @@
 
 -->
 <site-config> 
-  <version>10</version>  
+  <version>4.0.1</version>  
   <wem-project>editorial</wem-project>  
   <display-name>editorial</display-name>  
   <locale> 
